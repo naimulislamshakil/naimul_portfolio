@@ -1,0 +1,11 @@
+body {
+	font-family: 'Source Sans 3', serif !important;
+}
+
+nav {
+	font-family: 'Source Sans 3', serif !important;
+}
+
+a:hover {
+	color: aqua !important;
+}
