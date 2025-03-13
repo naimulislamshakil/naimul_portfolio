@@ -1,7 +1,7 @@
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import './App.css';
 import { ColorModeContext, useMode } from './theme';
-import Navbar from './Compoments/NAvbar';
+import Navbar from './Compoments/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import {
 	AboutPage,

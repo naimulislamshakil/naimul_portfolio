@@ -140,7 +140,7 @@ export const themeSettings = (mode) => {
 							light: colors.grey[100],
 						},
 						background: {
-							default: colors.grey[900],
+							default: '#111827',
 						},
 				  }
 				: {
@@ -157,13 +157,13 @@ export const themeSettings = (mode) => {
 							light: colors.grey[100],
 						},
 						background: {
-							default: '#fcfcfc',
+							default: '#fafafb',
 						},
 				  }),
 		},
 		typography: {
 			fontFamily: ['Source Sans 3', 'serif'].join(','),
-			fontSize: 12,
+			fontSize: 14,
 			h1: {
 				fontFamily: ['Source Sans 3', 'serif'].join(','),
 				fontSize: 40,
@@ -198,7 +198,7 @@ export const ColorModeContext = createContext({
 });
 
 export const useMode = () => {
-	const [mode, setMode] = useState('dark');
+	const [mode, setMode] = useState('light');
 
 	const colorMode = useMemo(
 		() => ({

@@ -1,8 +1,8 @@
 import React from 'react';
-import Home from '../Compoments/Home';
+import Banner from '../Compoments/Banner';
 
 const HomePage = () => {
-	return <Home />;
+	return <Banner />;
 };
 
 export default HomePage;
