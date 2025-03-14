@@ -12,6 +12,9 @@ import {
 } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Link } from 'react-router-dom';
 import banner from '../assets/banner.jpg';
@@ -127,6 +130,27 @@ const Banner = () => {
 							to="https://github.com/naimulislamshakil"
 						>
 							<GitHubIcon style={{ fontSize: '40px' }} />
+						</Link>
+						<Link
+							target="-"
+							style={{ textDecoration: 'none', color: 'inherit' }}
+							to="https://web.facebook.com/naimul.islam.shakil.156111"
+						>
+							<FacebookIcon style={{ fontSize: '40px' }} />
+						</Link>
+						<Link
+							target="-"
+							style={{ textDecoration: 'none', color: 'inherit' }}
+							to="https://x.com/MDNAIMULISLAMS5"
+						>
+							<XIcon style={{ fontSize: '40px' }} />
+						</Link>
+						<Link
+							target="-"
+							style={{ textDecoration: 'none', color: 'inherit' }}
+							to="https://www.instagram.com/naimulislam555/"
+						>
+							<InstagramIcon style={{ fontSize: '40px' }} />
 						</Link>
 						<Link
 							target="-"
