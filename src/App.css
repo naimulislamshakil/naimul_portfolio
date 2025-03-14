@@ -2,6 +2,14 @@ body {
 	font-family: 'Source Sans 3', serif !important;
 }
 
+html {
+	--cursor-color: #3b82f6;
+}
+
+html.dark-mode {
+	--cursor-color: #fff;
+}
+
 nav {
 	font-family: 'Source Sans 3', serif !important;
 }

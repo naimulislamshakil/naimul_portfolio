@@ -31,10 +31,10 @@ const Banner = () => {
 				sx={{
 					alignItems: 'center',
 					height: '90vh',
-					textAlign: 'start',
+					textAlign: 'center',
 				}}
 			>
-				<Grid item xs={12} md={7} p={1} order={{ xs: 2, md: 1 }}>
+				<Grid item xs={12} md={12} p={1} order={{ xs: 2, md: 1 }}>
 					<Typography
 						variant="h3"
 						fontWeight={400}
@@ -42,7 +42,7 @@ const Banner = () => {
 							color: theme.palette.mode === 'light' ? '#1F2937' : '#F3F4F6',
 						}}
 					>
-						Hello I’m Naimul Islam Shakil !
+						Building Next-Level Websites That Convert
 					</Typography>
 					<Typography
 						variant="h1"
@@ -52,30 +52,36 @@ const Banner = () => {
 							color: theme.palette.mode === 'light' ? '#1F2937' : '#F3F4F6',
 						}}
 					>
-						I’m a{' '}
 						<span
 							style={{
 								color: theme.palette.mode === 'light' ? '#3B82F6' : '#6366F1	',
 							}}
 						>
-							Full Stack Web Developer
-						</span>
+							Full Stack Web Developer Expert
+						</span>{' '}
+						| Future Agency Founder
 					</Typography>
 
 					<Typography
 						fontWeight={400}
 						variant="body1"
+						width={700}
 						fontSize={16}
-						sx={{ color: `${colors.grey[200]}`, mt: '10px' }}
+						sx={{
+							color: `${colors.grey[200]}`,
+							mt: '10px',
+							ml: 'auto',
+							mr: 'auto',
+						}}
 					>
 						Are you looking to start a business with eye-catching web
 						application? Or you want to redesign your previous web application
 						with modern technology? If this, you came to the right place. I’m an
-						expert with 4 years experience as a React developer as well as a
-						Full Stack developer. With my 4 years experience knowledge, combined
-						with visulization and talent, we can create together a visual
-						solution and user friendly digital web application that deliver
-						results for your business and fullfill your business goal.
+						expert with 4 years experience as a Full Stack developer. With my 4
+						years experience knowledge, combined with visulization and talent,
+						we can create together a visual solution and user friendly digital
+						web application that deliver results for your business and fullfill
+						your business goal.
 					</Typography>
 
 					<Box>
@@ -91,7 +97,7 @@ const Banner = () => {
 								color: theme.palette.mode === 'light' ? '#fff' : '#141414',
 							}}
 						>
-							About Me
+							Get a Free 30 Minute Consultation
 						</Button>
 						<Button
 							variant="contained"
@@ -113,7 +119,7 @@ const Banner = () => {
 					<Box
 						mt={7}
 						display="flex"
-						justifyContent="start"
+						justifyContent="center"
 						gap={3}
 						alignItems="center"
 					>
@@ -161,9 +167,9 @@ const Banner = () => {
 						</Link>
 					</Box>
 				</Grid>
-				<Grid item xs={12} md={5} order={{ xs: 1, md: 2 }}>
+				{/* <Grid item xs={12} md={5} order={{ xs: 1, md: 2 }}>
 					<img src={banner} style={{ width: '100%', borderRadius: '10px' }} />
-				</Grid>
+				</Grid> */}
 			</Grid>
 		</Container>
 	);

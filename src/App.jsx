@@ -12,9 +12,11 @@ import {
 	ServicePage,
 } from './Route';
 import ScrollToTop from 'react-scroll-to-top';
+import AnimatedCursor from 'react-animated-cursor';
 
 function App() {
 	const [theme, colorMode] = useMode();
+
 	return (
 		<ColorModeContext.Provider value={colorMode}>
 			<ThemeProvider theme={theme}>
@@ -30,6 +32,7 @@ function App() {
 					<Route path="/portfolio" element={<PortfolioPage />} />
 					<Route path="/blog" element={<BlogPage />} />
 				</Routes>
+				<AnimatedCursor />
 				<ScrollToTop smooth />
 			</ThemeProvider>
 		</ColorModeContext.Provider>
