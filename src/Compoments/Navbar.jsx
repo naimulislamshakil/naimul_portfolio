@@ -151,20 +151,20 @@ const Navbar = () => {
 					{/* Drawer Menu Items */}
 					<List>
 						{menuItems.map((item, i) => (
-							<ListItem button key={i} onClick={toggleDrawer(false)}>
-								<Link
-									style={{
-										textDecoration: 'none',
-										color: 'inherit',
-										fontSize: '16px',
-										fontWeight: 600,
-									}}
-									key={i}
-									to={item.route}
-								>
+							<Link
+								style={{
+									textDecoration: 'none',
+									color: 'inherit',
+									fontSize: '16px',
+									fontWeight: 600,
+								}}
+								key={i}
+								to={item.route}
+							>
+								<ListItem button onClick={toggleDrawer(false)}>
 									{item.name}
-								</Link>
-							</ListItem>
+								</ListItem>
+							</Link>
 						))}
 					</List>
 				</Box>
