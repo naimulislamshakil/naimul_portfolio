@@ -27,6 +27,8 @@ const AboutMe = () => {
 		'React',
 		'API Development',
 		'Google Cloud',
+		'Web Design',
+		'UI/UX Design',
 		'Django',
 		'PostgreSQL',
 		'Git',
