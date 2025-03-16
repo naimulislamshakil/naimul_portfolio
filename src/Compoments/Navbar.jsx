@@ -57,7 +57,14 @@ const Navbar = () => {
 
 	return (
 		<>
-			<AppBar position="sticky" color="transparent" sx={{ boxShadow: 'none' }}>
+			<AppBar
+				position="sticky"
+				color="transparent"
+				sx={{
+					boxShadow: 'none',
+					background: theme.palette.mode === 'light' ? '#fafafb' : '#111827',
+				}}
+			>
 				<Toolbar
 					sx={{ justifyContent: { xs: 'flex-end', md: 'space-between' } }}
 				>

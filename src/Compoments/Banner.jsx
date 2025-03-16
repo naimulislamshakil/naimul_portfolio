@@ -161,9 +161,7 @@ const Banner = () => {
 						</Link>
 					</Box>
 				</Grid>
-				{/* <Grid item xs={12} md={5} order={{ xs: 1, md: 2 }}>
-					<img src={banner} style={{ width: '100%', borderRadius: '10px' }} />
-				</Grid> */}
+			
 			</Grid>
 		</Container>
 	);

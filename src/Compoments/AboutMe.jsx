@@ -1,6 +1,7 @@
 import {
 	Box,
 	Button,
+	Chip,
 	Container,
 	Grid,
 	Typography,
@@ -8,16 +9,28 @@ import {
 } from '@mui/material';
 import Banner from '../assets/banner.jpg';
 import { tokens } from '../theme';
+import { useNavigate } from 'react-router-dom';
 
 const AboutMe = () => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
+	const navigate = useNavigate();
+
+	const goToAboutMe = () => {
+		navigate('/about_me');
+	};
 
 	const skills = [
 		'Javascript (ES6)',
 		'Typescript',
 		'Python',
 		'React',
+		'API Development',
+		'Google Cloud',
+		'Django',
+		'PostgreSQL',
+		'Git',
+		'GitHub',
 		'Redux',
 		'Bootstrap',
 		'Tailwind CSS',
@@ -108,25 +121,13 @@ const AboutMe = () => {
 						gap={1}
 					>
 						{skills.map((skill, i) => (
-							<Box
-								sx={{
-									background:
-										theme.palette.mode === 'light' ? '#dbeafe' : '#183756',
-									color: `${colors.grey[200]}`,
-									padding: '8px 15px',
-									borderRadius: '10px',
-									fontFamily: 'Poppins',
-									fontWeight: '500',
-								}}
-								key={i}
-							>
-								{skill}
-							</Box>
+							<Chip key={i} label={skill} variant="outlined" />
 						))}
 					</Box>
 
 					<Button
 						variant="contained"
+						onClick={() => goToAboutMe()}
 						sx={{
 							mt: 2,
 							fontWeight: 500,

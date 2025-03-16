@@ -26,13 +26,13 @@ function App() {
 
 				<Routes>
 					<Route path="/" element={<HomePage />} />
-					<Route path="/about_us" element={<AboutPage />} />
+					<Route path="/about_me" element={<AboutPage />} />
 					<Route path="/contact_us" element={<ContactPage />} />
 					<Route path="/service" element={<ServicePage />} />
 					<Route path="/portfolio" element={<PortfolioPage />} />
 					<Route path="/blog" element={<BlogPage />} />
 				</Routes>
-				<AnimatedCursor />
+				{/* <AnimatedCursor /> */}
 				<ScrollToTop smooth />
 			</ThemeProvider>
 		</ColorModeContext.Provider>
