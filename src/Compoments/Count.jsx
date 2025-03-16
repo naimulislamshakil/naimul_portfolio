@@ -20,103 +20,103 @@ const Count = () => {
 		>
 			<Container maxWidth="xl">
 				<Grid container spacing={2} justifyContent="center" alignItems="center">
-					<Grid
-						item
-						sx={12}
-						md={3}
-						borderRight={
-							theme.palette.mode === 'light'
-								? '1px solid #fafafb'
-								: '1px solid #111827'
-						}
-						p={3}
-						textAlign="center"
-					>
-						<Typography
-							variant="h2"
-							fontWeight={700}
+					<Grid item xs={12} md={3} p={3} textAlign="center">
+						<Box
 							sx={{
-								color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
-								fontSize: '50px',
+								borderRight: {
+									md:
+										theme.palette.mode === 'light'
+											? '1px solid #fafafb'
+											: '1px solid #111827',
+								},
 							}}
 						>
-							20+
-						</Typography>
-						<Typography
-							variant="h4"
-							fontWeight={400}
-							sx={{
-								color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
-							}}
-						>
-							Finished Projects
-						</Typography>
+							<Typography
+								variant="h2"
+								fontWeight={700}
+								sx={{
+									color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
+									fontSize: '50px',
+								}}
+							>
+								20+
+							</Typography>
+							<Typography
+								variant="h4"
+								fontWeight={400}
+								sx={{
+									color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
+								}}
+							>
+								Finished Projects
+							</Typography>
+						</Box>
 					</Grid>
-					<Grid
-						item
-						sx={12}
-						md={3}
-						borderRight={
-							theme.palette.mode === 'light'
-								? '1px solid #fafafb'
-								: '1px solid #111827'
-						}
-						p={3}
-						textAlign="center"
-					>
-						<Typography
-							variant="h2"
-							fontWeight={700}
+					<Grid item xs={12} md={3} p={3} textAlign="center">
+						<Box
 							sx={{
-								color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
-								fontSize: '50px',
+								borderRight: {
+									md:
+										theme.palette.mode === 'light'
+											? '1px solid #fafafb'
+											: '1px solid #111827',
+								},
 							}}
 						>
-							97%
-						</Typography>
-						<Typography
-							variant="h4"
-							fontWeight={400}
-							sx={{
-								color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
-							}}
-						>
-							Client Retention Rate
-						</Typography>
+							<Typography
+								variant="h2"
+								fontWeight={700}
+								sx={{
+									color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
+									fontSize: '50px',
+								}}
+							>
+								97%
+							</Typography>
+							<Typography
+								variant="h4"
+								fontWeight={400}
+								sx={{
+									color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
+								}}
+							>
+								Client Retention Rate
+							</Typography>
+						</Box>
 					</Grid>
-					<Grid
-						item
-						sx={12}
-						md={3}
-						borderRight={
-							theme.palette.mode === 'light'
-								? '1px solid #fafafb'
-								: '1px solid #111827'
-						}
-						p={3}
-						textAlign="center"
-					>
-						<Typography
-							variant="h2"
-							fontWeight={700}
+					<Grid item xs={12} md={3} p={3} textAlign="center">
+						<Box
 							sx={{
-								color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
-								fontSize: '50px',
+								borderRight: {
+									md:
+										theme.palette.mode === 'light'
+											? '1px solid #fafafb'
+											: '1px solid #111827',
+								},
 							}}
 						>
-							18+
-						</Typography>
-						<Typography
-							variant="h4"
-							fontWeight={400}
-							sx={{
-								color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
-							}}
-						>
-							Happy Client
-						</Typography>
+							<Typography
+								variant="h2"
+								fontWeight={700}
+								sx={{
+									color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
+									fontSize: '50px',
+								}}
+							>
+								18+
+							</Typography>
+							<Typography
+								variant="h4"
+								fontWeight={400}
+								sx={{
+									color: theme.palette.mode === 'light' ? '#F3F4F6' : '#1F2937',
+								}}
+							>
+								Happy Client
+							</Typography>
+						</Box>
 					</Grid>
-					<Grid item sx={12} md={3} p={3} textAlign="center">
+					<Grid item xs={12} md={3} p={3} textAlign="center">
 						<Typography
 							variant="h2"
 							fontWeight={700}
