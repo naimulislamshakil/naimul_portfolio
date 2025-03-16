@@ -1,51 +1,27 @@
 import {
 	AppBar,
 	Box,
-	Container,
 	IconButton,
-	Menu,
-	MenuItem,
 	Toolbar,
 	Tooltip,
 	Typography,
-	Button,
 	useTheme,
 	Drawer,
 	List,
 	ListItem,
-	ListItemText,
 } from '@mui/material';
-import React, { useContext, useState } from 'react';
-import { ColorModeContext, tokens } from '../theme';
-import AdbIcon from '@mui/icons-material/Adb';
+import { useContext, useState } from 'react';
+import { ColorModeContext } from '../theme';
 import MenuIcon from '@mui/icons-material/Menu';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
 
-const pages = ['Products', 'Pricing', 'Blog'];
-
 const Navbar = () => {
 	const theme = useTheme();
-	const colors = tokens(theme.palette.mode);
 	const colorMode = useContext(ColorModeContext);
 	const [open, setOpen] = useState(false);
-
-	const [anchorElNav, setAnchorElNav] = React.useState(null);
-	const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-	const handleOpenNavMenu = (event) => {
-		setAnchorElNav(event.currentTarget);
-	};
-
-	const handleCloseNavMenu = () => {
-		setAnchorElNav(null);
-	};
-
-	const handleCloseUserMenu = () => {
-		setAnchorElUser(null);
-	};
 
 	const toggleDrawer = (isOpen) => () => {
 		setOpen(isOpen);
@@ -81,7 +57,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<AppBar position="static" color="transparent" sx={{ boxShadow: 'none' }}>
+			<AppBar position="sticky" color="transparent" sx={{ boxShadow: 'none' }}>
 				<Toolbar
 					sx={{ justifyContent: { xs: 'flex-end', md: 'space-between' } }}
 				>

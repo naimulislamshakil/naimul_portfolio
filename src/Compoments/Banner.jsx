@@ -1,12 +1,8 @@
 import {
 	Box,
 	Button,
-	Card,
-	CardContent,
 	Container,
-	Divider,
 	Grid,
-	IconButton,
 	Typography,
 	useTheme,
 } from '@mui/material';
@@ -17,7 +13,6 @@ import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { Link } from 'react-router-dom';
-import banner from '../assets/banner.jpg';
 import { tokens } from '../theme';
 
 const Banner = () => {
@@ -65,7 +60,6 @@ const Banner = () => {
 					<Typography
 						fontWeight={400}
 						variant="body1"
-						width={700}
 						fontSize={16}
 						sx={{
 							color: `${colors.grey[200]}`,
