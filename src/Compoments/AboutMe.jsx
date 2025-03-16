@@ -32,14 +32,15 @@ const AboutMe = () => {
 		'JWT',
 	];
 	return (
-		<Container maxWidth="xl">
+		<Container maxWidth="xl" sx={{ pb: 5 }}>
 			<Grid container spacing={2}>
-				<Grid item xs={6}>
+				<Grid item xs={12} md={6}>
 					<img src={Banner} style={{ width: '100%', borderRadius: '10px' }} />
 				</Grid>
 				<Grid
 					item
-					xs={6}
+					xs={12}
+					md={6}
 					display="flex"
 					alignItems="start"
 					justifyContent="center"
