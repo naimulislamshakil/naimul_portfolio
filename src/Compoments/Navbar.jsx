@@ -17,6 +17,7 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/Naimul Islam Sahkil.jpg';
 
 const Navbar = () => {
 	const theme = useTheme();
@@ -68,16 +69,28 @@ const Navbar = () => {
 				<Toolbar
 					sx={{ justifyContent: { xs: 'flex-end', md: 'space-between' } }}
 				>
-					{/* Logo on the left */}
-					<Typography variant="h6" sx={{ flexGrow: { xs: 1, md: 0 } }}>
-						My Website
-					</Typography>
+					<Box display="flex" alignItems="center" gap={1}>
+						<img
+							src={Logo}
+							alt="Naimul Islam Shakil"
+							style={{ width: '15%' }}
+						/>
+						{/* Logo on the left */}
+						<Typography
+							variant="h4"
+						fontWeight={900}
+							fontStyle="revert-layer"
+							sx={{ flexGrow: { xs: 1, md: 0 }, fontFamily: 'Dancing Script', }}
+						>
+							Naimul Islam Shakil
+						</Typography>
+					</Box>
 
 					{/* Centered Menu for md+ screens */}
 					<Box
 						sx={{
 							display: { xs: 'none', md: 'flex' },
-
+							width: '100%',
 							gap: 4,
 						}}
 					>

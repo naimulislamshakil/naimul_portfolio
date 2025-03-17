@@ -54,7 +54,7 @@ const Banner = () => {
 						>
 							Full Stack Web Developer Expert
 						</span>{' '}
-						| Future Agency Founder
+						| Future Agency Founder.
 					</Typography>
 
 					<Typography
@@ -161,7 +161,6 @@ const Banner = () => {
 						</Link>
 					</Box>
 				</Grid>
-			
 			</Grid>
 		</Container>
 	);
