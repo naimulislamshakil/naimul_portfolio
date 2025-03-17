@@ -32,7 +32,7 @@ function App() {
 					<Route path="/portfolio" element={<PortfolioPage />} />
 					<Route path="/blog" element={<BlogPage />} />
 				</Routes>
-				{/* <AnimatedCursor /> */}
+				<AnimatedCursor />
 				<ScrollToTop smooth />
 			</ThemeProvider>
 		</ColorModeContext.Provider>

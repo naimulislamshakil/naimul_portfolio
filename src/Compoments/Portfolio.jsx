@@ -1,12 +1,105 @@
-import { Box, Button, Container, Typography, useTheme } from '@mui/material';
-import React, { useState } from 'react';
+import {
+	Box,
+	Button,
+	Card,
+	CardContent,
+	Chip,
+	Container,
+	Grid,
+	Typography,
+	useTheme,
+} from '@mui/material';
+import { useState } from 'react';
 import { tokens } from '../theme';
-import { portfolioItems } from '../data/Protfolio';
+import Project1 from '../assets/React Developer.png';
+import { useNavigate } from 'react-router-dom';
 
 const Portfolio = () => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 	const [filter, setFilter] = useState('all');
+	const navigate = useNavigate();
+
+	const portfolioItems = [
+		{
+			id: 1,
+			category: 'web',
+			project: {
+				alt: 'Full stack web developer',
+				img: Project1,
+				role: 'Full Stack Developer (Freelancer)',
+				summary:
+					'As part of a skilled 4-member team, I contributed to building CarDekho, a robust car buying and selling platform. I designed a responsive front-end with Next.js and TypeScript and developed efficient back-end services using Node.js and MongoDB. This collaborative effort resulted in a seamless, scalable, and feature-rich platform, empowering fast and user-friendly transactions for buyers and sellers.',
+				Technologies: [
+					'React',
+					'Next.js',
+					'Node.js',
+					'Express.js',
+					'Socket.io',
+					'Material',
+					'Mongoose',
+					'MongoDB',
+					'GraphQL',
+					'Redux Toolkit',
+					'Tailwind CSS',
+					'UI/UX Design',
+				],
+				link: 'https://www.cardekho.com/',
+			},
+		},
+		{
+			id: 1,
+			category: 'web',
+			project: {
+				alt: 'Full stack web developer',
+				img: Project1,
+				role: 'Full Stack Developer (Freelancer)',
+				summary:
+					'As part of a skilled 4-member team, I contributed to building CarDekho, a robust car buying and selling platform. I designed a responsive front-end with Next.js and TypeScript and developed efficient back-end services using Node.js and MongoDB. This collaborative effort resulted in a seamless, scalable, and feature-rich platform, empowering fast and user-friendly transactions for buyers and sellers.',
+				Technologies: [
+					'React',
+					'Next.js',
+					'Node.js',
+					'Express.js',
+					'Socket.io',
+					'Material',
+					'Mongoose',
+					'MongoDB',
+					'GraphQL',
+					'Redux Toolkit',
+					'Tailwind CSS',
+					'UI/UX Design',
+				],
+				link: 'https://www.cardekho.com/',
+			},
+		},
+		{
+			id: 1,
+			category: 'web',
+			project: {
+				alt: 'Full stack web developer',
+				img: Project1,
+				role: 'Full Stack Developer (Freelancer)',
+				summary:
+					'As part of a skilled 4-member team, I contributed to building CarDekho, a robust car buying and selling platform. I designed a responsive front-end with Next.js and TypeScript and developed efficient back-end services using Node.js and MongoDB. This collaborative effort resulted in a seamless, scalable, and feature-rich platform, empowering fast and user-friendly transactions for buyers and sellers.',
+				Technologies: [
+					'React',
+					'Next.js',
+					'Node.js',
+					'Express.js',
+					'Socket.io',
+					'Material',
+					'Mongoose',
+					'MongoDB',
+					'GraphQL',
+					'Redux Toolkit',
+					'Tailwind CSS',
+					'UI/UX Design',
+				],
+				link: 'https://www.cardekho.com/',
+			},
+		},
+	];
 
 	// Filtering logic
 	const filteredItems =
@@ -139,13 +232,67 @@ const Portfolio = () => {
 				</Button>
 			</Box>
 
-			<Box className="portfolio-items">
-				{filteredItems.map((item) => (
-					<Box key={item.id} className="item">
-						{item.title}
-					</Box>
+			<Grid container spacing={2} my={2} justifyContent="center">
+				{filteredItems.map((item, i) => (
+					<Grid key={i} item xs={12} md={6} lg={4}>
+						<Card sx={{ width: '100%', borderRadius: '10px', padding: 0 }}>
+							<CardContent>
+								<Box>
+									<img
+										src={item?.project?.img}
+										alt={item?.project?.alt}
+										style={{ width: '100%', padding: 0 }}
+									/>
+								</Box>
+
+								<Typography variant="body1" fontWeight={600}>
+									{item?.project?.role}
+								</Typography>
+
+								<Box textAlign="start">
+									{item?.project?.Technologies?.map((skill, i) => (
+										<Chip
+											sx={{ mt: 1, ml: 1 }}
+											key={i}
+											label={skill}
+											variant="outlined"
+										/>
+									))}
+								</Box>
+
+								<Typography
+									fontWeight={400}
+									variant="body1"
+									fontSize={16}
+									sx={{
+										color: `${colors.grey[200]}`,
+										mt: '10px',
+									}}
+								>
+									{item?.project?.summary}
+								</Typography>
+
+								<Button
+									variant="contained"
+									// onClick={() => goToAboutMe()}
+									sx={{
+										mt: 2,
+										fontWeight: 500,
+										fontSize: 14,
+										fontFamily: 'Poppins',
+										padding: '10px 30px',
+										background:
+											theme.palette.mode === 'light' ? '#141414' : '#fff	',
+										color: theme.palette.mode === 'light' ? '#fff' : '#141414',
+									}}
+								>
+									Visite Website
+								</Button>
+							</CardContent>
+						</Card>
+					</Grid>
 				))}
-			</Box>
+			</Grid>
 		</Container>
 	);
 };
