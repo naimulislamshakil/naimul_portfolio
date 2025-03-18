@@ -12,13 +12,12 @@ import {
 import { useState } from 'react';
 import { tokens } from '../theme';
 import Project1 from '../assets/React Developer.png';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Portfolio = () => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
 	const [filter, setFilter] = useState('all');
-	const navigate = useNavigate();
 
 	const portfolioItems = [
 		{
@@ -272,22 +271,32 @@ const Portfolio = () => {
 									{item?.project?.summary}
 								</Typography>
 
-								<Button
-									variant="contained"
-									// onClick={() => goToAboutMe()}
-									sx={{
-										mt: 2,
-										fontWeight: 500,
-										fontSize: 14,
-										fontFamily: 'Poppins',
-										padding: '10px 30px',
-										background:
-											theme.palette.mode === 'light' ? '#141414' : '#fff	',
-										color: theme.palette.mode === 'light' ? '#fff' : '#141414',
+								<Link
+									target="-"
+									style={{
+										textDecoration: 'none',
+										color: 'inherit',
 									}}
+									to={item?.project?.link}
 								>
-									Visite Website
-								</Button>
+									<Button
+										variant="contained"
+										// onClick={() => goToAboutMe()}
+										sx={{
+											mt: 2,
+											fontWeight: 500,
+											fontSize: 14,
+											fontFamily: 'Poppins',
+											padding: '10px 30px',
+											background:
+												theme.palette.mode === 'light' ? '#141414' : '#fff	',
+											color:
+												theme.palette.mode === 'light' ? '#fff' : '#141414',
+										}}
+									>
+										Visite Website
+									</Button>
+								</Link>
 							</CardContent>
 						</Card>
 					</Grid>

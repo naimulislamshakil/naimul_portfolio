@@ -4,6 +4,7 @@ import WhyChoseMe from '../Compoments/WhyChoseMe';
 import Count from '../Compoments/Count';
 import Service from '../Compoments/Service';
 import Portfolio from '../Compoments/Portfolio';
+import Testminial from '../Compoments/Testminial';
 
 const HomePage = () => {
 	return (
@@ -14,6 +15,7 @@ const HomePage = () => {
 			<Count />
 			<Service />
 			<Portfolio />
+			<Testminial />
 		</>
 	);
 };

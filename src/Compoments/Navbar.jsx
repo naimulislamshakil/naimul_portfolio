@@ -63,11 +63,14 @@ const Navbar = () => {
 				color="transparent"
 				sx={{
 					boxShadow: 'none',
-					background: theme.palette.mode === 'light' ? '#fafafb' : '#111827',
+					// background: theme.palette.mode === 'light' ? '#fafafb' : '#111827',
 				}}
 			>
 				<Toolbar
-					sx={{ justifyContent: { xs: 'flex-end', md: 'space-between' } }}
+					sx={{
+						justifyContent: { xs: 'flex-end', md: 'space-between' },
+						alignItems: 'center',
+					}}
 				>
 					<Box display="flex" alignItems="center" gap={1}>
 						<img
@@ -78,9 +81,9 @@ const Navbar = () => {
 						{/* Logo on the left */}
 						<Typography
 							variant="h4"
-						fontWeight={900}
+							fontWeight={900}
 							fontStyle="revert-layer"
-							sx={{ flexGrow: { xs: 1, md: 0 }, fontFamily: 'Dancing Script', }}
+							sx={{ flexGrow: { xs: 1, md: 0 }, fontFamily: 'Dancing Script' }}
 						>
 							Naimul Islam Shakil
 						</Typography>
@@ -90,7 +93,7 @@ const Navbar = () => {
 					<Box
 						sx={{
 							display: { xs: 'none', md: 'flex' },
-							width: '100%',
+							width: '80%',
 							gap: 4,
 						}}
 					>
