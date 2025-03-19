@@ -50,3 +50,5 @@ export const testimonials = [
 			'MD’s custom web application has revolutionized our e-commerce experience! The platform is fast, intuitive, and has dramatically improved our customer journey. Within just a few weeks post-launch, we saw a significant increase in user engagement and sales. MD’s expertise and dedication made the project a huge success.',
 	},
 ];
+
+export const imgAltText="Full stack web application developer"

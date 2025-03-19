@@ -1,6 +1,14 @@
-import { Box, Button, Container, Grid, Typography, useTheme } from '@mui/material';
+import {
+	Box,
+	Button,
+	Container,
+	Grid,
+	Typography,
+	useTheme,
+} from '@mui/material';
 import Banner from '../assets/banner.jpg';
 import { tokens } from '../theme';
+import { imgAltText } from '../data/Testimonial';
 
 const WhyChoseMe = () => {
 	const theme = useTheme();
@@ -103,7 +111,11 @@ const WhyChoseMe = () => {
 					</Button>
 				</Grid>
 				<Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
-					<img src={Banner} style={{ width: '100%', borderRadius: '10px' }} />
+					<img
+						src={Banner}
+						style={{ width: '100%', borderRadius: '10px' }}
+						alt={imgAltText}
+					/>
 				</Grid>
 			</Grid>
 		</Container>
