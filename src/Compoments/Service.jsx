@@ -41,7 +41,7 @@ const Service = () => {
 
 			<Grid container spacing={2} mt={2}>
 				<Grid item xs={12} md={6} lg={4}>
-					<Card sx={{ px: 2, py: 3, borderRadius: '8px' }}>
+					<Card sx={{ px: 2, py: 3, borderRadius: '8px', height: '315px' }}>
 						<CardContent>
 							<Typography variant="h4" fontWeight={700}>
 								1. E-Commerce Website Development
