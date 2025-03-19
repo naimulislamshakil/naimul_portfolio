@@ -6,6 +6,7 @@ import Service from '../Compoments/Service';
 import Portfolio from '../Compoments/Portfolio';
 import Testminial from '../Compoments/Testminial';
 import ContactUs from '../Compoments/ContactUs';
+import Technology from '../Compoments/Technology';
 
 const HomePage = () => {
 	return (
@@ -17,6 +18,7 @@ const HomePage = () => {
 			<Service />
 			<Portfolio />
 			<Testminial />
+			<Technology />
 			<ContactUs />
 		</>
 	);
