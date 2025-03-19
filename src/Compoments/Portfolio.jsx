@@ -234,13 +234,13 @@ const Portfolio = () => {
 			<Grid container spacing={2} my={2} justifyContent="center">
 				{filteredItems.map((item, i) => (
 					<Grid key={i} item xs={12} md={6} lg={4}>
-						<Card sx={{ width: '100%', borderRadius: '10px', padding: 0 }}>
+						<Card sx={{ width: '100%', borderRadius: '10px' }}>
 							<CardContent>
 								<Box>
 									<img
 										src={item?.project?.img}
 										alt={item?.project?.alt}
-										style={{ width: '100%', padding: 0 }}
+										style={{ width: '100%' }}
 									/>
 								</Box>
 
