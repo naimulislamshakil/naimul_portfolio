@@ -5,6 +5,7 @@ import Count from '../Compoments/Count';
 import Service from '../Compoments/Service';
 import Portfolio from '../Compoments/Portfolio';
 import Testminial from '../Compoments/Testminial';
+import ContactUs from '../Compoments/ContactUs';
 
 const HomePage = () => {
 	return (
@@ -16,6 +17,7 @@ const HomePage = () => {
 			<Service />
 			<Portfolio />
 			<Testminial />
+			<ContactUs />
 		</>
 	);
 };
