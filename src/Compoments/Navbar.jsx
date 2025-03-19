@@ -69,11 +69,16 @@ const Navbar = () => {
 			>
 				<Toolbar
 					sx={{
-						justifyContent: { xs: 'flex-end', md: 'space-between' },
+						justifyContent: { xs: 'space-between', md: 'space-between' },
 						alignItems: 'center',
 					}}
 				>
-					<Box display="flex" alignItems="center" gap={1}>
+					<Box
+						display="flex"
+						alignItems="center"
+						justifyContent="start"
+						gap={1}
+					>
 						<Avatar
 							src={Logo}
 							alt="Naimul Islam Shakil"
@@ -118,27 +123,29 @@ const Navbar = () => {
 						))}
 					</Box>
 
-					{/* Mobile Menu Icon */}
-					<IconButton
-						edge="end"
-						color="inherit"
-						aria-label="menu"
-						sx={{ display: { xs: 'block', md: 'none' } }}
-						onClick={toggleDrawer(true)}
-					>
-						<MenuIcon />
-					</IconButton>
-
-					{/* Dark/Light Mode Toggle */}
-					<Tooltip title="Dark/Light Mode" sx={{ mb: 1, ml: 1 }}>
-						<IconButton onClick={colorMode.toggleColorMode}>
-							{theme.palette.mode === 'dark' ? (
-								<DarkModeOutlinedIcon />
-							) : (
-								<LightModeOutlinedIcon />
-							)}
+					<Box display="flex">
+						{/* Mobile Menu Icon */}
+						<IconButton
+							edge="end"
+							color="inherit"
+							aria-label="menu"
+							sx={{ display: { xs: 'block', md: 'none' } }}
+							onClick={toggleDrawer(true)}
+						>
+							<MenuIcon />
 						</IconButton>
-					</Tooltip>
+
+						{/* Dark/Light Mode Toggle */}
+						<Tooltip title="Dark/Light Mode" sx={{ mb: 1, ml: 1 }}>
+							<IconButton onClick={colorMode.toggleColorMode}>
+								{theme.palette.mode === 'dark' ? (
+									<DarkModeOutlinedIcon />
+								) : (
+									<LightModeOutlinedIcon />
+								)}
+							</IconButton>
+						</Tooltip>
+					</Box>
 				</Toolbar>
 			</AppBar>
 
