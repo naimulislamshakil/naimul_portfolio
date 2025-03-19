@@ -1,4 +1,10 @@
-import { Box, Container, Typography, useTheme } from '@mui/material';
+import {
+	Box,
+	Container,
+	Typography,
+	useMediaQuery,
+	useTheme,
+} from '@mui/material';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
@@ -8,6 +14,7 @@ import { useState } from 'react';
 const Technology = () => {
 	const theme = useTheme();
 	const [value, setValue] = useState('1');
+	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
@@ -29,7 +36,9 @@ const Technology = () => {
 				<TabContext value={value}>
 					<Box>
 						<TabList
-							centered
+							centered={!isMobile}
+							variant={isMobile ? 'scrollable' : 'standard'}
+							scrollButtons="auto"
 							onChange={handleChange}
 							aria-label="lab API tabs example"
 							TabIndicatorProps={{
