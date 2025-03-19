@@ -9,6 +9,7 @@ import {
 	Drawer,
 	List,
 	ListItem,
+	Avatar,
 } from '@mui/material';
 import { useContext, useState } from 'react';
 import { ColorModeContext } from '../theme';
@@ -17,7 +18,7 @@ import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/Naimul Islam Sahkil.jpg';
+import Logo from '../assets/Naimul Islam Shakil testimonial client Male.png';
 
 const Navbar = () => {
 	const theme = useTheme();
@@ -73,17 +74,21 @@ const Navbar = () => {
 					}}
 				>
 					<Box display="flex" alignItems="center" gap={1}>
-						<img
+						<Avatar
 							src={Logo}
 							alt="Naimul Islam Shakil"
-							style={{ width: '15%' }}
+							sx={{ width: 60, height: 60, mt: 2 }}
 						/>
 						{/* Logo on the left */}
 						<Typography
 							variant="h4"
 							fontWeight={900}
 							fontStyle="revert-layer"
-							sx={{ flexGrow: { xs: 1, md: 0 }, fontFamily: 'Dancing Script' }}
+							sx={{
+								flexGrow: { xs: 1, md: 0 },
+								mt: 1,
+								fontFamily: 'Dancing Script',
+							}}
 						>
 							Naimul Islam Shakil
 						</Typography>
@@ -93,7 +98,7 @@ const Navbar = () => {
 					<Box
 						sx={{
 							display: { xs: 'none', md: 'flex' },
-							width: '80%',
+							width: '50%',
 							gap: 4,
 						}}
 					>
