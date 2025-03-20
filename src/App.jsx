@@ -13,6 +13,7 @@ import {
 } from './Route';
 import ScrollToTop from 'react-scroll-to-top';
 import AnimatedCursor from 'react-animated-cursor';
+import Footer from './Compoments/Footer';
 
 function App() {
 	const [theme, colorMode] = useMode();
@@ -32,7 +33,8 @@ function App() {
 					<Route path="/portfolio" element={<PortfolioPage />} />
 					<Route path="/blog" element={<BlogPage />} />
 				</Routes>
-				{/* <AnimatedCursor /> */}
+				<Footer />
+				<AnimatedCursor />
 				<ScrollToTop smooth />
 			</ThemeProvider>
 		</ColorModeContext.Provider>

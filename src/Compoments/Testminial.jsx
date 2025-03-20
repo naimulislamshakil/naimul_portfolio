@@ -32,7 +32,7 @@ const Testminial = () => {
 	};
 
 	return (
-		<Container maxWidth="xl" sx={{ my: 10 }}>
+		<Container maxWidth="xl" sx={{ my: 10 }} id="testimonial">
 			<Typography
 				variant="h2"
 				fontWeight={700}

@@ -9,10 +9,22 @@ import {
 import Banner from '../assets/banner.jpg';
 import { tokens } from '../theme';
 import { imgAltText } from '../data/Testimonial';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 const WhyChoseMe = () => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
+	const location = useLocation();
+
+	useEffect(() => {
+		if (location.hash) {
+			const element = document.getElementById(location.hash.substring(1));
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	}, [location]);
 	return (
 		<Container maxWidth="xl" sx={{ pb: 5, mt: 5 }}>
 			<Grid container spacing={2}>
@@ -94,21 +106,23 @@ const WhyChoseMe = () => {
 						</Typography>
 					</Box>
 
-					<Button
-						variant="contained"
-						// onClick={() => goToAboutMe()}
-						sx={{
-							mt: 2,
-							fontWeight: 500,
-							fontSize: 14,
-							fontFamily: 'Poppins',
-							padding: '10px 30px',
-							background: theme.palette.mode === 'light' ? '#141414' : '#fff	',
-							color: theme.palette.mode === 'light' ? '#fff' : '#141414',
-						}}
-					>
-						See My Real Client Feedback
-					</Button>
+					<Link to="/#testimonial">
+						<Button
+							variant="contained"
+							// onClick={() => goToTestimonial()}
+							sx={{
+								mt: 2,
+								fontWeight: 500,
+								fontSize: 14,
+								fontFamily: 'Poppins',
+								padding: '10px 30px',
+								background: theme.palette.mode === 'light' ? '#141414' : '#fff	',
+								color: theme.palette.mode === 'light' ? '#fff' : '#141414',
+							}}
+						>
+							See My Real Client Feedback
+						</Button>
+					</Link>
 				</Grid>
 				<Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
 					<img

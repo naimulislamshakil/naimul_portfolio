@@ -23,6 +23,19 @@ import Next from '../assets/download (12).png';
 import Woocommerce from '../assets/download (29).png';
 import Shopify from '../assets/download (30).png';
 import Node from '../assets/download (8).png';
+import Express from '../assets/download (11).png';
+import Express2 from '../assets/download (32).png';
+import Python from '../assets/download (10).png';
+import Php from '../assets/download (9).png';
+import Nest from '../assets/download (14).png';
+import Mongo from '../assets/download (23).png';
+import Firebase from '../assets/download (25).png';
+import DynamoDB from '../assets/download (24).png';
+import AWS from '../assets/download (26).png';
+import AWS2 from '../assets/download (15).png';
+import GoogleCloud from '../assets/download (27).png';
+import PostgreSQL2 from '../assets/download (16).png';
+import PostgreSQL from '../assets/download.png';
 import Webflow from '../assets/images-removebg-preview.png';
 
 const Technology = () => {
@@ -65,7 +78,6 @@ const Technology = () => {
 							<Tab className="text" label="Frontend" value="1" />
 							<Tab className="text" label="Backend" value="2" />
 							<Tab className="text" label="Database" value="3" />
-							<Tab className="text" label="Frameworks" value="4" />
 							<Tab className="text" label="Cloud" value="5" />
 						</TabList>
 					</Box>
@@ -76,7 +88,7 @@ const Technology = () => {
 								<Tooltip title="React.JS">
 									<img
 										src={React}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -85,7 +97,7 @@ const Technology = () => {
 								<Tooltip title="Vue.JS">
 									<img
 										src={Vue}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -94,7 +106,7 @@ const Technology = () => {
 								<Tooltip title="Javascript">
 									<img
 										src={Javascript}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -103,7 +115,7 @@ const Technology = () => {
 								<Tooltip title="Material Ui">
 									<img
 										src={Mui}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -112,7 +124,7 @@ const Technology = () => {
 								<Tooltip title="Tailwind CSS">
 									<img
 										src={Tailwind}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -121,7 +133,7 @@ const Technology = () => {
 								<Tooltip title="Bootstrap">
 									<img
 										src={Bootstrap}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -130,7 +142,7 @@ const Technology = () => {
 								<Tooltip title="Next.JS">
 									<img
 										src={Next}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -139,7 +151,7 @@ const Technology = () => {
 								<Tooltip title="Woocommerce">
 									<img
 										src={Woocommerce}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -148,7 +160,7 @@ const Technology = () => {
 								<Tooltip title="Webflow">
 									<img
 										src={Webflow}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -157,7 +169,7 @@ const Technology = () => {
 								<Tooltip title="Shopify">
 									<img
 										src={Shopify}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
@@ -165,19 +177,141 @@ const Technology = () => {
 						</Grid>
 					</TabPanel>
 					<TabPanel value="2">
-						<Grid container spacing={2}>
+						<Grid container spacing={2} justifyContent="center">
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Node.JS">
 									<img
 										src={Node}
-										style={{ width: '80%', borderRadius: '10px' }}
+										style={{ width: '100%', borderRadius: '10px' }}
+										alt={imgAltText}
+									/>
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="Express.JS">
+									{theme.palette.mode === 'light' ? (
+										<img
+											src={Express}
+											style={{ width: '100%', borderRadius: '10px' }}
+											alt={imgAltText}
+										/>
+									) : (
+										<img
+											src={Express2}
+											style={{ width: '100%', borderRadius: '10px' }}
+											alt={imgAltText}
+										/>
+									)}
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="Python">
+									<img
+										src={Python}
+										style={{ width: '100%', borderRadius: '10px' }}
+										alt={imgAltText}
+									/>
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="PhP">
+									<img
+										src={Php}
+										style={{ width: '100%', borderRadius: '10px' }}
+										alt={imgAltText}
+									/>
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="Nest.JS">
+									<img
+										src={Nest}
+										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
 									/>
 								</Tooltip>
 							</Grid>
 						</Grid>
 					</TabPanel>
-					<TabPanel value="3">Item Three</TabPanel>
+					<TabPanel value="3">
+						<Grid container spacing={2} justifyContent="center">
+							<Grid item xs={2} md={1}>
+								<Tooltip title="MongoDB">
+									<img
+										src={Mongo}
+										style={{ width: '100%', borderRadius: '10px' }}
+										alt={imgAltText}
+									/>
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="Firebase">
+									<img
+										src={Firebase}
+										style={{ width: '100%', borderRadius: '10px' }}
+										alt={imgAltText}
+									/>
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="DynamoDB">
+									<img
+										src={DynamoDB}
+										style={{ width: '100%', borderRadius: '10px' }}
+										alt={imgAltText}
+									/>
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="PostgreSQL">
+									{theme.palette.mode === 'light' ? (
+										<img
+											src={PostgreSQL2}
+											style={{ width: '100%', borderRadius: '10px' }}
+											alt={imgAltText}
+										/>
+									) : (
+										<img
+											src={PostgreSQL}
+											style={{ width: '100%', borderRadius: '10px' }}
+											alt={imgAltText}
+										/>
+									)}
+								</Tooltip>
+							</Grid>
+						</Grid>
+					</TabPanel>
+
+					<TabPanel value="5">
+						<Grid container spacing={2} justifyContent="center">
+							<Grid item xs={2} md={1}>
+								<Tooltip title="AWS">
+									{theme.palette.mode === 'light' ? (
+										<img
+											src={AWS}
+											style={{ width: '100%', borderRadius: '10px' }}
+											alt={imgAltText}
+										/>
+									) : (
+										<img
+											src={AWS2}
+											style={{ width: '100%', borderRadius: '10px' }}
+											alt={imgAltText}
+										/>
+									)}
+								</Tooltip>
+							</Grid>
+							<Grid item xs={2} md={1}>
+								<Tooltip title="Google Cloud">
+									<img
+										src={GoogleCloud}
+										style={{ width: '100%', borderRadius: '10px' }}
+										alt={imgAltText}
+									/>
+								</Tooltip>
+							</Grid>
+						</Grid>
+					</TabPanel>
 				</TabContext>
 			</Box>
 		</Container>
