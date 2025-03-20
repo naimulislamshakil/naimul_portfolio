@@ -51,10 +51,10 @@ const Navbar = () => {
 			name: 'Contact',
 			route: '/contact_us',
 		},
-		{
-			name: 'Blog',
-			route: '/blog',
-		},
+		// {
+		// 	name: 'Blog',
+		// 	route: '/blog',
+		// },
 	];
 
 	return (

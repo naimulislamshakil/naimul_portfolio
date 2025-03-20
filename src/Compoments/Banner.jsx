@@ -18,6 +18,14 @@ import { tokens } from '../theme';
 const Banner = () => {
 	const theme = useTheme();
 	const colors = tokens(theme.palette.mode);
+
+	const handleDownload = () => {
+		const link = document.createElement('a');
+		link.href = '../assets/Naimul Islam resume.pdf'; // Replace with the path to your file
+		link.download =
+			'Naimul Islam Shakil | Full stack web application developer resume.pdf'; // Name of the downloaded file
+		link.click();
+	};
 	return (
 		<Container maxWidth="xl">
 			<Grid
@@ -79,22 +87,26 @@ const Banner = () => {
 					</Typography>
 
 					<Box>
+						<Link to="https://wa.me/8801879212420" target="-">
+							<Button
+								variant="contained"
+								sx={{
+									mt: 2,
+									fontWeight: 500,
+									fontSize: 14,
+									fontFamily: 'Poppins',
+									padding: '10px 30px',
+									background:
+										theme.palette.mode === 'light' ? '#141414' : '#fff	',
+									color: theme.palette.mode === 'light' ? '#fff' : '#141414',
+								}}
+							>
+								Get a Free 30 Minute Consultation
+							</Button>
+						</Link>
 						<Button
 							variant="contained"
-							sx={{
-								mt: 2,
-								fontWeight: 500,
-								fontSize: 14,
-								fontFamily: 'Poppins',
-								padding: '10px 30px',
-								background: theme.palette.mode === 'light' ? '#141414' : '#fff	',
-								color: theme.palette.mode === 'light' ? '#fff' : '#141414',
-							}}
-						>
-							Get a Free 30 Minute Consultation
-						</Button>
-						<Button
-							variant="contained"
+							onClick={handleDownload}
 							sx={{
 								mt: 2,
 								fontWeight: 500,

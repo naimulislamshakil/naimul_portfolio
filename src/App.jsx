@@ -14,6 +14,7 @@ import {
 import ScrollToTop from 'react-scroll-to-top';
 import AnimatedCursor from 'react-animated-cursor';
 import Footer from './Compoments/Footer';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 	const [theme, colorMode] = useMode();
@@ -34,8 +35,9 @@ function App() {
 					<Route path="/blog" element={<BlogPage />} />
 				</Routes>
 				<Footer />
-				<AnimatedCursor />
+				{/* <AnimatedCursor /> */}
 				<ScrollToTop smooth />
+				<Toaster />
 			</ThemeProvider>
 		</ColorModeContext.Provider>
 	);

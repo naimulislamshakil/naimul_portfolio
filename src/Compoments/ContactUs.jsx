@@ -22,6 +22,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
 	const theme = useTheme();
@@ -37,9 +38,32 @@ const ContactUs = () => {
 		resolver: yupResolver(contactSchema),
 	});
 
-	const submit = (data) => {
-		console.log(data);
-		reset();
+	const submit = async (data) => {
+		try {
+			await fetch(
+				'https://script.google.com/macros/s/AKfycbza1OW3n7WFXPWsCC6w4Hf6oKM5MTBnTkfnG7npZ2tzFfoO7aWAxqMRY8iBK98ta6VcRg/exec',
+				{
+					method: 'POST',
+					mode: 'no-cors',
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					body: JSON.stringify(data),
+				}
+			)
+				.then((res) => res.json())
+				.then((data) => {
+					console.log({ data });
+					toast.success('Form submitted successfully!');
+					reset();
+				})
+				.catch((err) => {
+					console.log({ err });
+				});
+		} catch (error) {
+			console.error(error);
+			alert('Error submitting the form!');
+		}
 	};
 
 	return (
@@ -207,8 +231,11 @@ const ContactUs = () => {
 									</Grid>
 									<Grid item xs={12}>
 										<TextField
+											{...register('phoneNo')}
 											label="Phone NO."
 											fullWidth
+											error={!!errors?.phoneNo}
+											helperText={errors?.phoneNo?.message}
 											placeholder="Enter your phone number..."
 										/>
 									</Grid>
