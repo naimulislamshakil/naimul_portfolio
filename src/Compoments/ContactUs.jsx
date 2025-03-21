@@ -59,6 +59,8 @@ const ContactUs = () => {
 				})
 				.catch((err) => {
 					console.log({ err });
+					toast.success('Form submitted successfully!');
+					reset();
 				});
 		} catch (error) {
 			console.error(error);
