@@ -1,6 +1,9 @@
 import {
 	Box,
 	Button,
+	Card,
+	CardContent,
+	Chip,
 	Container,
 	Grid,
 	Typography,
@@ -10,6 +13,11 @@ import Banner from '../assets/banner.jpg';
 import { imgAltText } from '../data/Testimonial';
 import { tokens } from '../theme';
 import { useNavigate } from 'react-router-dom';
+import { exprienceData } from '../data/Expricnce';
+import Portfolio from '../Compoments/Portfolio';
+import Testminial from '../Compoments/Testminial';
+import Technology from '../Compoments/Technology';
+import ContactUs from '../Compoments/ContactUs';
 
 const AboutPage = () => {
 	const theme = useTheme();
@@ -22,7 +30,7 @@ const AboutPage = () => {
 	return (
 		<Container maxWidth="xl" sx={{ mt: 2 }}>
 			<Typography
-				variant="h2"
+				variant="h1"
 				fontWeight={700}
 				sx={{
 					color: theme.palette.mode === 'light' ? '#1F2937' : '#F3F4F6',
@@ -103,6 +111,76 @@ const AboutPage = () => {
 					</Button>
 				</Grid>
 			</Grid>
+
+			<Typography
+				variant="h2"
+				mt={2}
+				fontWeight={700}
+				sx={{
+					color: theme.palette.mode === 'light' ? '#1F2937' : '#F3F4F6',
+				}}
+				textAlign="center"
+			>
+				Work Exprience
+			</Typography>
+
+			<Box my={5}>
+				{exprienceData?.map((exprience, i) => (
+					<Card key={i} sx={{ px: 2, py: 3, mb: 2 }}>
+						<CardContent>
+							<Grid container spacing={2}>
+								<Grid item xs={2}>
+									<Chip
+										label={`${exprience.startDate} - ${exprience.endDate}`}
+										// variant="outlined"
+										sx={{
+											textTransform: 'uppercase',
+											background:
+												theme.palette.mode === 'light' ? '#141414' : '#fff	',
+											color:
+												theme.palette.mode === 'light' ? '#fff' : '#141414',
+										}}
+									/>
+								</Grid>
+								<Grid item xs={10}>
+									<Typography variant="h4" fontWeight={700}>
+										{exprience.company}
+									</Typography>
+									<Typography variant="h5" fontWeight={600}>
+										{exprience.role}
+									</Typography>
+
+									<Typography
+										fontWeight={400}
+										variant="body1"
+										fontSize={16}
+										sx={{
+											color: `${colors.grey[200]}`,
+											mt: '10px',
+										}}
+									>
+										{exprience.description}
+									</Typography>
+
+									{exprience.skills.map((skill, i) => (
+										<Chip
+											sx={{ mt: 2, marginRight: 1 }}
+											key={i}
+											label={skill}
+											variant="outlined"
+										/>
+									))}
+								</Grid>
+							</Grid>
+						</CardContent>
+					</Card>
+				))}
+			</Box>
+
+			<Portfolio />
+			<Testminial />
+			<Technology />
+			<ContactUs />
 		</Container>
 	);
 };
