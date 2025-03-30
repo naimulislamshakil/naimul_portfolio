@@ -36,7 +36,7 @@ const Navbar = () => {
 		},
 		{
 			name: 'About',
-			route: '/about_us',
+			route: '/about_me',
 		},
 
 		{

@@ -35,7 +35,7 @@ function App() {
 					<Route path="/blog" element={<BlogPage />} />
 				</Routes>
 				<Footer />
-				{/* <AnimatedCursor /> */}
+				<AnimatedCursor />
 				<ScrollToTop smooth />
 				<Toaster />
 			</ThemeProvider>
