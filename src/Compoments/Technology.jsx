@@ -87,6 +87,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="React.JS">
 									<img
+										loading="lazy"
 										src={React}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -96,6 +97,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Vue.JS">
 									<img
+										loading="lazy"
 										src={Vue}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -105,6 +107,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Javascript">
 									<img
+										loading="lazy"
 										src={Javascript}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -114,6 +117,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Material Ui">
 									<img
+										loading="lazy"
 										src={Mui}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -123,6 +127,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1} mt={2}>
 								<Tooltip title="Tailwind CSS">
 									<img
+										loading="lazy"
 										src={Tailwind}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -132,6 +137,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1} mt={1}>
 								<Tooltip title="Bootstrap">
 									<img
+										loading="lazy"
 										src={Bootstrap}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -141,6 +147,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Next.JS">
 									<img
+										loading="lazy"
 										src={Next}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -150,6 +157,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Woocommerce">
 									<img
+										loading="lazy"
 										src={Woocommerce}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -159,6 +167,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Webflow">
 									<img
+										loading="lazy"
 										src={Webflow}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -168,6 +177,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Shopify">
 									<img
+										loading="lazy"
 										src={Shopify}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -181,6 +191,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Node.JS">
 									<img
+										loading="lazy"
 										src={Node}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -191,12 +202,14 @@ const Technology = () => {
 								<Tooltip title="Express.JS">
 									{theme.palette.mode === 'light' ? (
 										<img
+											loading="lazy"
 											src={Express}
 											style={{ width: '100%', borderRadius: '10px' }}
 											alt={imgAltText}
 										/>
 									) : (
 										<img
+											loading="lazy"
 											src={Express2}
 											style={{ width: '100%', borderRadius: '10px' }}
 											alt={imgAltText}
@@ -207,6 +220,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Python">
 									<img
+										loading="lazy"
 										src={Python}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -216,6 +230,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="PhP">
 									<img
+										loading="lazy"
 										src={Php}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -225,6 +240,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Nest.JS">
 									<img
+										loading="lazy"
 										src={Nest}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -238,6 +254,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="MongoDB">
 									<img
+										loading="lazy"
 										src={Mongo}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -247,6 +264,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Firebase">
 									<img
+										loading="lazy"
 										src={Firebase}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -256,6 +274,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="DynamoDB">
 									<img
+										loading="lazy"
 										src={DynamoDB}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}
@@ -266,12 +285,14 @@ const Technology = () => {
 								<Tooltip title="PostgreSQL">
 									{theme.palette.mode === 'light' ? (
 										<img
+											loading="lazy"
 											src={PostgreSQL2}
 											style={{ width: '100%', borderRadius: '10px' }}
 											alt={imgAltText}
 										/>
 									) : (
 										<img
+											loading="lazy"
 											src={PostgreSQL}
 											style={{ width: '100%', borderRadius: '10px' }}
 											alt={imgAltText}
@@ -288,12 +309,14 @@ const Technology = () => {
 								<Tooltip title="AWS">
 									{theme.palette.mode === 'light' ? (
 										<img
+											loading="lazy"
 											src={AWS}
 											style={{ width: '100%', borderRadius: '10px' }}
 											alt={imgAltText}
 										/>
 									) : (
 										<img
+											loading="lazy"
 											src={AWS2}
 											style={{ width: '100%', borderRadius: '10px' }}
 											alt={imgAltText}
@@ -304,6 +327,7 @@ const Technology = () => {
 							<Grid item xs={2} md={1}>
 								<Tooltip title="Google Cloud">
 									<img
+										loading="lazy"
 										src={GoogleCloud}
 										style={{ width: '100%', borderRadius: '10px' }}
 										alt={imgAltText}

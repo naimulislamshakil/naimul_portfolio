@@ -7,10 +7,14 @@ import Portfolio from '../Compoments/Portfolio';
 import Testminial from '../Compoments/Testminial';
 import ContactUs from '../Compoments/ContactUs';
 import Technology from '../Compoments/Technology';
+import { HomeMeta } from '../Compoments/MetaTag';
+import SchemaMarkup from '../Compoments/SchemaMarkup';
 
 const HomePage = () => {
 	return (
 		<>
+			<SchemaMarkup />
+			<HomeMeta />
 			<Banner />
 			<AboutMe />
 			<WhyChoseMe />

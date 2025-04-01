@@ -238,6 +238,7 @@ const Portfolio = () => {
 							<CardContent>
 								<Box>
 									<img
+										loading="lazy"
 										src={item?.project?.img}
 										alt={item?.project?.alt}
 										style={{ width: '100%' }}

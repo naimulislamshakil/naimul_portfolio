@@ -50,7 +50,11 @@ const AboutMe = () => {
 		<Container maxWidth="xl" sx={{ pb: 5 }}>
 			<Grid container spacing={2}>
 				<Grid item xs={12} md={6}>
-					<img src={Banner} style={{ width: '100%', borderRadius: '10px' }} />
+					<img
+						loading="lazy"
+						src={Banner}
+						style={{ width: '100%', borderRadius: '10px' }}
+					/>
 				</Grid>
 				<Grid
 					item

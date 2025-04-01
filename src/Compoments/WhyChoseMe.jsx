@@ -127,6 +127,7 @@ const WhyChoseMe = () => {
 				<Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
 					<img
 						src={Banner}
+						loading="lazy"
 						style={{ width: '100%', borderRadius: '10px' }}
 						alt={imgAltText}
 					/>
